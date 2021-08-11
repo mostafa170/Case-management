@@ -11,6 +11,11 @@ class SecondpageScreen extends StatefulWidget {
 
 class _SecondpageScreen extends State<SecondpageScreen> {
   bool _value = false;
+  bool _value2 = false;
+  bool _value3 = false;
+  bool _value4 = false;
+  bool _value5 = false;
+  bool _value6 = false;
   bool _flag = true;
 
   @override
@@ -55,6 +60,7 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                   Flexible(
                                       child: Row(
                                     children: [
+
                                       Flexible(
                                         child: CheckboxListTile(
                                           title: const Text("جسدي",
@@ -77,7 +83,8 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                       ),
                                     ]
                                   )),
-                                  Flexible(
+                                  Visibility(    visible: _value,
+                                      child: Flexible(
                                       child: Padding(
                                         padding: const EdgeInsets.only(right: 8.0),
                                         child: TextField(
@@ -94,7 +101,7 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                               ),
                                               hintText: 'حدد',
                                             )),
-                                      )),
+                                      ))),
                                 ],
                               )),
                             ],
@@ -120,11 +127,11 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                                     autofocus: false,
                                                     activeColor: Colors.teal,
                                                     checkColor: Colors.white,
-                                                    selected: _value,
-                                                    value: _value,
+                                                    selected: _value2,
+                                                    value: _value2,
                                                     onChanged: (value) {
                                                       setState(() {
-                                                        _value = value!;
+                                                        _value2 = value!;
                                                       });
                                                     },
                                                   ),
@@ -132,24 +139,25 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                                 ),
                                               ]
                                           )),
-                                      Flexible(
-                                          child: Padding(
-                                            padding: const EdgeInsets.only(right: 8.0),
-                                            child: TextField(
-                                                decoration: new InputDecoration(
-                                                  labelText: 'حدد',
-                                                  border: InputBorder.none,
-                                                  focusedBorder: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: Colors.teal, width: 1.0),
-                                                  ),
-                                                  enabledBorder: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: Colors.black, width: 1.0),
-                                                  ),
-                                                  hintText: 'حدد',
-                                                )),
-                                          )),
+                                      Visibility(    visible: _value2,
+                                          child: Flexible(
+                                              child: Padding(
+                                                padding: const EdgeInsets.only(right: 8.0),
+                                                child: TextField(
+                                                    decoration: new InputDecoration(
+                                                      labelText: 'حدد',
+                                                      border: InputBorder.none,
+                                                      focusedBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                            color: Colors.teal, width: 1.0),
+                                                      ),
+                                                      enabledBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                            color: Colors.black, width: 1.0),
+                                                      ),
+                                                      hintText: 'حدد',
+                                                    )),
+                                              ))),
                                     ],
                                   )),
                             ],
@@ -175,11 +183,11 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                                     autofocus: false,
                                                     activeColor: Colors.teal,
                                                     checkColor: Colors.white,
-                                                    selected: _value,
-                                                    value: _value,
+                                                    selected: _value3,
+                                                    value: _value3,
                                                     onChanged: (value) {
                                                       setState(() {
-                                                        _value = value!;
+                                                        _value3 = value!;
                                                       });
                                                     },
                                                   ),
@@ -187,24 +195,25 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                                 ),
                                               ]
                                           )),
-                                      Flexible(
-                                          child: Padding(
-                                            padding: const EdgeInsets.only(right: 8.0),
-                                            child: TextField(
-                                                decoration: new InputDecoration(
-                                                  labelText: 'حدد',
-                                                  border: InputBorder.none,
-                                                  focusedBorder: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: Colors.teal, width: 1.0),
-                                                  ),
-                                                  enabledBorder: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: Colors.black, width: 1.0),
-                                                  ),
-                                                  hintText: 'حدد',
-                                                )),
-                                          )),
+                                      Visibility(    visible: _value3,
+                                          child: Flexible(
+                                              child: Padding(
+                                                padding: const EdgeInsets.only(right: 8.0),
+                                                child: TextField(
+                                                    decoration: new InputDecoration(
+                                                      labelText: 'حدد',
+                                                      border: InputBorder.none,
+                                                      focusedBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                            color: Colors.teal, width: 1.0),
+                                                      ),
+                                                      enabledBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                            color: Colors.black, width: 1.0),
+                                                      ),
+                                                      hintText: 'حدد',
+                                                    )),
+                                              ))),
                                     ],
                                   )),
                             ],
@@ -230,11 +239,11 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                                     autofocus: false,
                                                     activeColor: Colors.teal,
                                                     checkColor: Colors.white,
-                                                    selected: _value,
-                                                    value: _value,
+                                                    selected: _value4,
+                                                    value: _value4,
                                                     onChanged: (value) {
                                                       setState(() {
-                                                        _value = value!;
+                                                        _value4 = value!;
                                                       });
                                                     },
                                                   ),
@@ -242,24 +251,25 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                                 ),
                                               ]
                                           )),
-                                      Flexible(
-                                          child: Padding(
-                                            padding: const EdgeInsets.only(right: 8.0),
-                                            child: TextField(
-                                                decoration: new InputDecoration(
-                                                  labelText: 'حدد',
-                                                  border: InputBorder.none,
-                                                  focusedBorder: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: Colors.teal, width: 1.0),
-                                                  ),
-                                                  enabledBorder: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: Colors.black, width: 1.0),
-                                                  ),
-                                                  hintText: 'حدد',
-                                                )),
-                                          )),
+                                      Visibility(    visible: _value4,
+                                          child: Flexible(
+                                              child: Padding(
+                                                padding: const EdgeInsets.only(right: 8.0),
+                                                child: TextField(
+                                                    decoration: new InputDecoration(
+                                                      labelText: 'حدد',
+                                                      border: InputBorder.none,
+                                                      focusedBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                            color: Colors.teal, width: 1.0),
+                                                      ),
+                                                      enabledBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                            color: Colors.black, width: 1.0),
+                                                      ),
+                                                      hintText: 'حدد',
+                                                    )),
+                                              ))),
                                     ],
                                   )),
                             ],
@@ -285,11 +295,11 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                                     autofocus: false,
                                                     activeColor: Colors.teal,
                                                     checkColor: Colors.white,
-                                                    selected: _value,
-                                                    value: _value,
+                                                    selected: _value5,
+                                                    value: _value5,
                                                     onChanged: (value) {
                                                       setState(() {
-                                                        _value = value!;
+                                                        _value5 = value!;
                                                       });
                                                     },
                                                   ),
@@ -297,24 +307,25 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                                 ),
                                               ]
                                           )),
-                                      Flexible(
-                                          child: Padding(
-                                            padding: const EdgeInsets.only(right: 8.0),
-                                            child: TextField(
-                                                decoration: new InputDecoration(
-                                                  labelText: 'حدد',
-                                                  border: InputBorder.none,
-                                                  focusedBorder: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: Colors.teal, width: 1.0),
-                                                  ),
-                                                  enabledBorder: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: Colors.black, width: 1.0),
-                                                  ),
-                                                  hintText: 'حدد',
-                                                )),
-                                          )),
+                                      Visibility(    visible: _value5,
+                                          child: Flexible(
+                                              child: Padding(
+                                                padding: const EdgeInsets.only(right: 8.0),
+                                                child: TextField(
+                                                    decoration: new InputDecoration(
+                                                      labelText: 'حدد',
+                                                      border: InputBorder.none,
+                                                      focusedBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                            color: Colors.teal, width: 1.0),
+                                                      ),
+                                                      enabledBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                            color: Colors.black, width: 1.0),
+                                                      ),
+                                                      hintText: 'حدد',
+                                                    )),
+                                              ))),
                                     ],
                                   )),
                             ],
@@ -340,11 +351,11 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                                     autofocus: false,
                                                     activeColor: Colors.teal,
                                                     checkColor: Colors.white,
-                                                    selected: _value,
-                                                    value: _value,
+                                                    selected: _value6,
+                                                    value: _value6,
                                                     onChanged: (value) {
                                                       setState(() {
-                                                        _value = value!;
+                                                        _value6 = value!;
                                                       });
                                                     },
                                                   ),
@@ -352,24 +363,25 @@ class _SecondpageScreen extends State<SecondpageScreen> {
                                                 ),
                                               ]
                                           )),
-                                      Flexible(
-                                          child: Padding(
-                                            padding: const EdgeInsets.only(right: 8.0),
-                                            child: TextField(
-                                                decoration: new InputDecoration(
-                                                  labelText: 'حدد',
-                                                  border: InputBorder.none,
-                                                  focusedBorder: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: Colors.teal, width: 1.0),
-                                                  ),
-                                                  enabledBorder: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: Colors.black, width: 1.0),
-                                                  ),
-                                                  hintText: 'حدد',
-                                                )),
-                                          )),
+                                      Visibility(    visible: _value6,
+                                          child: Flexible(
+                                              child: Padding(
+                                                padding: const EdgeInsets.only(right: 8.0),
+                                                child: TextField(
+                                                    decoration: new InputDecoration(
+                                                      labelText: 'حدد',
+                                                      border: InputBorder.none,
+                                                      focusedBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                            color: Colors.teal, width: 1.0),
+                                                      ),
+                                                      enabledBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                            color: Colors.black, width: 1.0),
+                                                      ),
+                                                      hintText: 'حدد',
+                                                    )),
+                                              ))),
                                     ],
                                   )),
                             ],
