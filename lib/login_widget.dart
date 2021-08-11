@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:case_management/theme.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:case_management/first.dart';
+import 'package:case_management/first_page.dart';
 
 //Widget for input
 
@@ -164,7 +164,7 @@ class LoginState extends State<LoginWidget> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => FirstScreen()));
+                            builder: (context) => FirstPageScreen()));
                   },
                             ),
                           ),

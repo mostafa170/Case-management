@@ -4,8 +4,8 @@ import 'package:case_management/second_page.dart';
 
 bool _flag=true;
 
-class FristPageScreen extends StatelessWidget {
-  const FristPageScreen({Key? key}) : super(key: key);
+class FirstPageScreen extends StatelessWidget {
+  const FirstPageScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
